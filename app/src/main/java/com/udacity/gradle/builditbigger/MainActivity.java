@@ -14,6 +14,8 @@ import com.example.joketeller.JokeProvider;
 
 public class MainActivity extends AppCompatActivity {
 
+    public static String staticJoke;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -45,11 +47,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void tellJoke(View view) {
 
-        Intent intent = new Intent(getBaseContext(),JokeActivity.class);
-        intent.putExtra("joke",JokeProvider.tellJokeMethod());
-        startActivity(intent);
-
-
+        new RetriveJokeAsyncTask().execute(this);
         //Toast.makeText(this, JokeProvider.tellJokeMethod() , Toast.LENGTH_SHORT).show();
     }
 
