@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void tellJoke(View view) {
-
+        Log.d("ARK","Called");
         new RetriveJokeAsyncTask().execute(new RetriveJokeAsyncTask.GotJokeCallback() {
             @Override
             public void done(String result, boolean error) {
@@ -53,6 +53,7 @@ public class MainActivity extends AppCompatActivity {
                     Log.e("error text", result);
                     Toast.makeText(getApplicationContext(), result, Toast.LENGTH_SHORT).show();
                 }else {
+                    Log.d("No Error","");
                     Intent intent = new Intent(getApplicationContext(), JokeActivity.class);
                     intent.putExtra("joke", result);
                     startActivity(intent);

@@ -1,4 +1,4 @@
-package com.udacity.gradle.free;
+package com.udacity.gradle.builditbigger;
 
 public class Constant {
     public static String mode = "FREE";

@@ -1,6 +1,6 @@
 package com.udacity.gradle.builditbigger;
 
-public class Constants {
+public class Constant {
 
-    public static String mode = "FREE";
+    public static String mode = "PAID";
 }

@@ -9,7 +9,7 @@ import android.widget.TextView;
 public class JokeActivity extends AppCompatActivity {
 
 
-    private TextView jokeText;
+    public TextView jokeText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,3 +22,4 @@ public class JokeActivity extends AppCompatActivity {
         jokeText.setText(intent.getStringExtra("joke"));
     }
 }
+

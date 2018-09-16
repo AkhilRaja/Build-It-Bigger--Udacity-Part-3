@@ -34,6 +34,16 @@ android {
     testOptions {
         unitTests.returnDefaultValues = true
     }
+
+    flavorDimensions "tier"
+    productFlavors {
+        free {
+
+        }
+        paid {
+
+        }
+    }
 }
 
 dependencies {
