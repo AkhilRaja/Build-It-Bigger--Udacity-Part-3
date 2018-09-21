@@ -2,7 +2,6 @@ package com.udacity.gradle.builditbigger;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -25,8 +24,7 @@ public class MainActivityFragment extends Fragment {
                              Bundle savedInstanceState) {
         View root = inflater.inflate(R.layout.fragment_main, container, false);
 
-        Log.d("ARK",""+ Constant.mode);
-        if(Constant.mode == "FREE") {
+
             AdView mAdView = root.findViewById(R.id.adView);
             // Create an ad request. Check logcat output for the hashed device ID to
             // get test ads on a physical device. e.g.
@@ -35,7 +33,7 @@ public class MainActivityFragment extends Fragment {
                     .addTestDevice(AdRequest.DEVICE_ID_EMULATOR)
                     .build();
             mAdView.loadAd(adRequest);
-        }
+
         return root;
     }
 }

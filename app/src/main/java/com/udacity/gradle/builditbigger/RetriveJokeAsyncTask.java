@@ -1,12 +1,7 @@
 package com.udacity.gradle.builditbigger;
 
-import android.annotation.SuppressLint;
-import android.content.Context;
-import android.content.Intent;
 import android.os.AsyncTask;
 import android.util.Log;
-
-import com.example.jokeactivity.JokeActivity;
 import com.google.api.client.extensions.android.http.AndroidHttp;
 import com.google.api.client.extensions.android.json.AndroidJsonFactory;
 import com.google.api.client.googleapis.services.AbstractGoogleClientRequest;

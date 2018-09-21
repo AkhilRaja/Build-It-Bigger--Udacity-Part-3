@@ -9,7 +9,7 @@ import android.widget.TextView;
 public class JokeActivity extends AppCompatActivity {
 
 
-    public TextView jokeText;
+    private TextView jokeText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

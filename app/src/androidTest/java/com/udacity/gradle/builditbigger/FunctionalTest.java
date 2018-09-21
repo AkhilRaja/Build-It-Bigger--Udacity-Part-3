@@ -20,7 +20,7 @@ import static junit.framework.Assert.assertEquals;
 
 public class FunctionalTest{
 
-    String joke ;
+    private String joke ;
     private static MyApi myApiService = null;
 
 @Test
