@@ -10,6 +10,7 @@ public class JokeActivity extends AppCompatActivity {
 
 
     private TextView jokeText;
+    public static String JOKE_INTENT = "joke";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,7 +20,7 @@ public class JokeActivity extends AppCompatActivity {
         jokeText = findViewById(R.id.textViewJokeContent);
 
         Intent intent = getIntent();
-        jokeText.setText(intent.getStringExtra("joke"));
+        jokeText.setText(intent.getStringExtra(JOKE_INTENT));
     }
 }
 

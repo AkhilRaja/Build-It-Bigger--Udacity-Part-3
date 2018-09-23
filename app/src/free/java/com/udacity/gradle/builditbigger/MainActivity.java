@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
                 }else {
                     Log.d("No Error","");
                     Intent intent = new Intent(getApplicationContext(), JokeActivity.class);
-                    intent.putExtra("joke", result);
+                    intent.putExtra(JokeActivity.JOKE_INTENT, result);
                     startActivity(intent);
                 }
             }
